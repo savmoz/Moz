@@ -1,0 +1,13 @@
+void f0_2() {
+   int li_0;
+   if ((!gi_128) && alertsOn) {
+      if (alertsOnCurrent) li_0 = 0;
+      else li_0 = 1;
+      li_0 = iBarShift(NULL, 0, iTime(NULL, g_timeframe_124, li_0));
+      if (g_ibuf_120[li_0] != g_ibuf_120[li_0 + 1]) {
+         if (g_ibuf_120[li_0] == 1.0) {
+            f0_6(li_0, "up");
+            return;
+         }
+         f0_6(li_0, "down");
+      }
