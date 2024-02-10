@@ -1,0 +1,15 @@
+...
+def again():
+    calc_again = input('''
+    Do you want to calculate again?
+    Please type Y for YES or N for NO.
+    ''')
+    # Accept 'y' or 'Y' by adding str.upper()
+    if calc_again.upper() == 'Y':
+        calculate()
+    # Accept 'n' or 'N' by adding str.upper()
+    elif calc_again.upper() == 'N':
+        print('See you later.')
+    else:
+        again()
+...
